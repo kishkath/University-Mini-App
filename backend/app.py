@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS
 import sqlite3
 import os
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(app)
 
 DATABASE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'issues.db')
 
